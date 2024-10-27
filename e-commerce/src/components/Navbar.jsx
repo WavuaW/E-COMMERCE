@@ -9,10 +9,14 @@ const Container = styled.div`
 const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 `;
 
 const Left = styled.div`
   flex: 1;
+  display: flex;
+  align-items: center;
 `;
 
 const Lugha = styled.span`
@@ -21,7 +25,15 @@ const Lugha = styled.span`
 `;
 
 const SearchContainer = styled.div`
-  border: 1px solid lightgray;
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+`;
+
+const Input = styled.input`
+  
 `;
 
 const Center = styled.div`
@@ -40,7 +52,7 @@ const Navbar = () => {
             <Left>
               <Lugha>EN</Lugha>
               <SearchContainer>
-                input
+                <Input/>
                 <SearchIcon />
               </SearchContainer>
             </Left>
