@@ -33,12 +33,16 @@ const SearchContainer = styled.div`
 `;
 
 const Input = styled.input`
-  
+    border: none;
 `;
 
 const Center = styled.div`
   flex: 1;
-  
+  text-align: center;
+`;
+
+const Logo = styled.h1`
+  font-weight: bold;
 `;
 
 const Right= styled.div`
@@ -56,7 +60,11 @@ const Navbar = () => {
                 <SearchIcon />
               </SearchContainer>
             </Left>
-            <Center>center</Center>
+            <Center>
+              <Logo>
+                WANDER.
+              </Logo>
+            </Center>
             <Right>right</Right>
         </Wrapper>
     </Container>
