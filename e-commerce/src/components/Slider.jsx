@@ -28,17 +28,37 @@ const Arrow = styled.div`
 `;
 
 const Wrapper = styled.div`
-  height: 100%;
+    height: 100%;
 `;
 
-const Slider = () => {
+const Slider = styled.div`
+    display: flex;  
+    align-items: center;
+`;
+const ImgContainer = styled.div`
+    flex: 1;
+
+`;
+const InfoContainer = styled.div`
+    flex: 1;
+`;
+
+const Image = styled.img`
+    
+`;
+
+
+const Slide = () => {
   return (
     <Container>
       <Arrow direction="left">
         <ArrowLeftOutlinedIcon />
       </Arrow>
       <Wrapper>
-        
+        <ImgContainer>
+          <Image src="https://unsplash.com/photos/woman-in-yellow-tracksuit-standing-on-basketball-court-side-nimElTcTNyY"/>
+        </ImgContainer>
+        <InfoContainer></InfoContainer>
       </Wrapper>
       <Arrow direction="right">
         <ArrowRightOutlinedIcon />
