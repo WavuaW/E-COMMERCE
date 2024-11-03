@@ -64,6 +64,7 @@ const Slide = () => {
         <ArrowRightOutlinedIcon />
       </Arrow>
     </Container>
+    
   )
 }
 
