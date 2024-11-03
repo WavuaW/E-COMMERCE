@@ -6,7 +6,6 @@ const Container = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: coral;
     position: relative;
 `;
 
@@ -24,6 +23,12 @@ const Arrow = styled.div`
     left: ${props=> props.direction === "left" && "10px"};
     right: ${props=> props.direction === "right" && "10px"};
     margin: auto;
+    cursor: pointer;
+    opacity: 0.5;
+`;
+
+const Wrapper = styled.div`
+  height: 100%;
 `;
 
 const Slider = () => {
@@ -32,6 +37,9 @@ const Slider = () => {
       <Arrow direction="left">
         <ArrowLeftOutlinedIcon />
       </Arrow>
+      <Wrapper>
+        
+      </Wrapper>
       <Arrow direction="right">
         <ArrowRightOutlinedIcon />
       </Arrow>
