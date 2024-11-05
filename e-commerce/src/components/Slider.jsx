@@ -31,34 +31,51 @@ const Wrapper = styled.div`
     height: 100%;
 `;
 
-const Slider = styled.div`
+const Slide = styled.div`
+    width: 100vw;
+    height: 100vh;
     display: flex;  
     align-items: center;
 `;
 const ImgContainer = styled.div`
+    height: 100%;
     flex: 1;
 
 `;
 const InfoContainer = styled.div`
     flex: 1;
+    padding: 50px;
 `;
+
+const Title = styled.h1`
+  
+`;
+
+const Desc = styled.p``
+
+const Button = styled.button``
 
 const Image = styled.img`
-    
+    height: 80%;
 `;
 
-
-const Slide = () => {
+const Slider = () => {
   return (
     <Container>
       <Arrow direction="left">
         <ArrowLeftOutlinedIcon />
       </Arrow>
       <Wrapper>
-        <ImgContainer>
-          <Image src="https://unsplash.com/photos/woman-in-yellow-tracksuit-standing-on-basketball-court-side-nimElTcTNyY"/>
-        </ImgContainer>
-        <InfoContainer></InfoContainer>
+        <Slide>
+          <ImgContainer>
+            <Image src="https://images.unsplash.com/photo-1603189343302-e603f7add05a?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+          </ImgContainer>
+          <InfoContainer>
+            <Title>SUMMER SALE</Title>
+            <Desc>DON'T COMPROMISE ON PRICE! GET FLAT 30% OFF ALL NEW ARRIVALS!!</Desc>
+            <Button>SHOP NOW!</Button>
+          </InfoContainer>
+        </Slide>
       </Wrapper>
       <Arrow direction="right">
         <ArrowRightOutlinedIcon />
