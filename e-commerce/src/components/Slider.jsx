@@ -33,6 +33,7 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
     height: 100%;
     display: flex;
+    transform: translateX(0vw);
 `;
 
 const Slide = styled.div`
@@ -75,9 +76,13 @@ const Image = styled.img`
 `;
 
 const Slider = () => {
+
+  const handleClick = (direction) => {
+
+  };
   return (
     <Container>
-      <Arrow direction="left">
+      <Arrow direction="left" onClick={()=>handleClick("left")}>
         <ArrowLeftOutlinedIcon />
       </Arrow>
       <Wrapper>
@@ -101,18 +106,18 @@ const Slider = () => {
             <Button>SHOP NOW!</Button>
           </InfoContainer>
         </Slide>
-        <Slide bg="fbf0f">
+        <Slide bg="fbf0f4">
           <ImgContainer>
             <Image src={MyImage}/>
           </ImgContainer>
           <InfoContainer>
-            <Title>SUMMER SALE!</Title>
+            <Title>POPULAR SALE!</Title>
             <Desc>DON'T COMPROMISE ON PRICE! GET FLAT 30% OFF ALL NEW ARRIVALS!</Desc>
             <Button>SHOP NOW!</Button>
           </InfoContainer>
         </Slide>
       </Wrapper>
-      <Arrow direction="right">
+      <Arrow direction="right" onClick={()=>handleClick("right")}>
         <ArrowRightOutlinedIcon />
       </Arrow>
     </Container>
