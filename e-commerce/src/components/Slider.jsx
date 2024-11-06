@@ -2,6 +2,8 @@ import { styled } from "styled-components"
 import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined"
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined'
 import MyImage from '../images/Image1-prettypink.png'
+import { useState } from "react";
+import { sliderItems } from "../data";
 
 
 const Container = styled.div`
@@ -28,6 +30,7 @@ const Arrow = styled.div`
     margin: auto;
     cursor: pointer;
     opacity: 0.5;
+    z-index: 2;
 `;
 
 const Wrapper = styled.div`
@@ -76,46 +79,27 @@ const Image = styled.img`
 `;
 
 const Slider = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+  const handleClick = (direction) => {};
 
-  const handleClick = (direction) => {
-
-  };
   return (
     <Container>
       <Arrow direction="left" onClick={()=>handleClick("left")}>
         <ArrowLeftOutlinedIcon />
       </Arrow>
       <Wrapper>
-        <Slide bg="f5fafd">
-          <ImgContainer>
-            <Image src={MyImage}/>
-          </ImgContainer>
-          <InfoContainer>
-            <Title>SUMMER SALE!</Title>
-            <Desc>DON'T COMPROMISE ON PRICE! GET FLAT 30% OFF ALL NEW ARRIVALS!</Desc>
-            <Button>SHOP NOW!</Button>
-          </InfoContainer>
-        </Slide>
-        <Slide bg="fcf1ed">
-          <ImgContainer>
-            <Image src={MyImage}/>
-          </ImgContainer>
-          <InfoContainer>
-            <Title>WINTER SALE!</Title>
-            <Desc>DON'T COMPROMISE ON PRICE! GET FLAT 30% OFF ALL NEW ARRIVALS!</Desc>
-            <Button>SHOP NOW!</Button>
-          </InfoContainer>
-        </Slide>
-        <Slide bg="fbf0f4">
-          <ImgContainer>
-            <Image src={MyImage}/>
-          </ImgContainer>
-          <InfoContainer>
-            <Title>POPULAR SALE!</Title>
-            <Desc>DON'T COMPROMISE ON PRICE! GET FLAT 30% OFF ALL NEW ARRIVALS!</Desc>
-            <Button>SHOP NOW!</Button>
-          </InfoContainer>
-        </Slide>
+        {sliderItems.map((item) => (
+          <Slide bg={item.bg}>
+            <ImgContainer>
+              <Image src={item.img}/>
+            </ImgContainer>
+            <InfoContainer>
+              <Title>{item.title}</Title>
+              <Desc>{item.desc}</Desc>
+              <Button>SHOP NOW!</Button>
+            </InfoContainer>
+          </Slide>
+        ))};
       </Wrapper>
       <Arrow direction="right" onClick={()=>handleClick("right")}>
         <ArrowRightOutlinedIcon />
