@@ -71,7 +71,7 @@ const Navbar = () => {
             </Left>
             <Center>
               <Logo>
-                SAFU
+                wander
               </Logo>
             </Center>
             <Right>

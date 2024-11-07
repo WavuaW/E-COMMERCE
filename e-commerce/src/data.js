@@ -16,7 +16,7 @@ export const sliderItems = [
         img: MyImage2,
         title: "WINTER SALE!",
         desc: "DON'T COMPROMISE ON PRICE! GET FLAT 30% OFF ALL NEW ARRIVALS!",
-        bg: "fbf0f4",
+        bg: "fcf1ed",
     },
 
     {
@@ -24,7 +24,7 @@ export const sliderItems = [
         img: MyImage1,
         title: "BRIDAL SALE!",
         desc: "DON'T COMPROMISE ON PRICE! GET FLAT 30% OFF ALL NEW ARRIVALS!",
-        bg: "fcf1ed",
+        bg: "fbf0f4",
     },
 
 ]
