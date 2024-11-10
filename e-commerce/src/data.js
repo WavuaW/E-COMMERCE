@@ -25,7 +25,6 @@ export const sliderItems = [
         title: "BRIDAL SALE!",
         desc: "DON'T COMPROMISE ON PRICE! GET FLAT 30% OFF ALL NEW ARRIVALS!",
         bg: "f9f6ff",
-
     },
 
 ]
