@@ -24,4 +24,5 @@ const CategoryItem = ({item}) => {
     </Container>
   )
 }
+
 export default CategoryItem
