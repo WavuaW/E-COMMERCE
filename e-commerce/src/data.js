@@ -1,6 +1,13 @@
 import MyImage from './images/Image1-prettypink.png';
 import MyImage1 from './images/Image1-artsy.png';
 import MyImage2 from './images/Image1-sprinkle.png';
+import MyImage3 from './images/Image3-punk.jpg';
+import MyImage4 from './images/Image3-leather.jpg';
+import MyImage5 from './images/Image3-bs.jpg';
+
+
+
+
 
 export const sliderItems = [
     {
@@ -32,17 +39,17 @@ export const sliderItems = [
 export const categories = [
     {
         id: 1, 
-        img: MyImage1,
+        img: MyImage3,
         title: "SHIRT STYLE!"
     },
     {
         id: 2, 
-        img: MyImage2,
+        img: MyImage4,
         title: "SHIRT STYLE!"
     },
     {
         id: 3, 
-        img: MyImage,
+        img: MyImage5,
         title: "SHIRT STYLE!"
     },
 ]
