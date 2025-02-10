@@ -34,7 +34,7 @@ export const sliderItems = [
         bg: "f9f6ff",
     },
 
-]
+];
 
 export const categories = [
     {
@@ -52,4 +52,15 @@ export const categories = [
         img: MyImage5,
         title: "SHIRT STYLE!"
     },
+];
+
+export const popularProducts = [
+    {
+        id: 1,
+        img: MyImage1
+    }, 
+    {
+        id: 2, 
+        img: MyImage2
+    }
 ]
