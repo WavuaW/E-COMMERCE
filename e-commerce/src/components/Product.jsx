@@ -7,7 +7,10 @@ const Product = ({item}) => {
   return (
     <Container>
       <Circle />
-      <Image />
+      <Image src={item.img}/>
+      <Info>
+        
+      </Info>
     </Container>
   )
 }
