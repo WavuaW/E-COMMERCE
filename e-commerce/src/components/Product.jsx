@@ -9,7 +9,6 @@ const Product = ({item}) => {
       <Circle />
       <Image src={item.img}/>
       <Info>
-        
       </Info>
     </Container>
   )
