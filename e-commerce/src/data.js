@@ -9,8 +9,9 @@ import MyImage7 from './images/Image6.jpg'
 import MyImage8 from './images/Image7.jpg'
 import MyImage9 from './images/Image8.jpg'
 import MyImage10 from './images/Image9.jpg'
-import MyImage11 from './images/Image8.jpg'
-import MyImage12 from './images/Image8.jpg'
+import MyImage11 from './images/Image11.jpg'
+import MyImage12 from './images/Image12.jpg'
+
 
 
 
