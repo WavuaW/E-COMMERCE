@@ -4,6 +4,14 @@ import MyImage2 from './images/Image1-sprinkle.png';
 import MyImage3 from './images/Image3-punk.jpg';
 import MyImage4 from './images/Image3-leather.jpg';
 import MyImage5 from './images/Image3-bs.jpg';
+import MyImage6 from './images/Image4.jpg'
+import MyImage7 from './images/Image6.jpg'
+import MyImage8 from './images/Image7.jpg'
+import MyImage9 from './images/Image8.jpg'
+import MyImage10 from './images/Image9.jpg'
+import MyImage11 from './images/Image8.jpg'
+import MyImage12 from './images/Image8.jpg'
+
 
 
 
@@ -57,10 +65,43 @@ export const categories = [
 export const popularProducts = [
     {
         id: 1,
-        img: MyImage1
+        img: MyImage6
     }, 
     {
         id: 2, 
-        img: MyImage2
+        img: MyImage7
+    },
+    {
+        id: 3,
+        img: MyImage8
+    }, 
+    {
+        id: 4, 
+        img: MyImage9
+    },
+    {
+        id: 5, 
+        img: MyImage7
+    },
+    {
+        id: 6,
+        img: MyImage8
+    }, 
+    {
+        id: 7, 
+        img: MyImage9
+    }
+    ,
+    {
+        id: 8, 
+        img: MyImage10
+    },
+    {
+        id: 9,
+        img: MyImage11
+    }, 
+    {
+        id: 10, 
+        img: MyImage12
     }
 ]

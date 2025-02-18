@@ -4,8 +4,9 @@ import { popularProducts } from '../data'
 import Product from './Product'
 
 const Container = styled.div`
-    pa: 20px;
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
 `;
 
 const Products = () => {
