@@ -10,11 +10,24 @@ const Container = styled.div`
   margin: 5px;
   min-width: 280px;
   height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5fbfd;
 `;
 
-const Circle = styled.div``;
+const Circle = styled.div`
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+`;
+
+
 const Image = styled.img`
   height: 75%;
+  z-index: 2;
 `;
 const Info = styled.div``;
 const Icon = styled.div``;
