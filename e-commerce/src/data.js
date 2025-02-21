@@ -15,12 +15,6 @@ import MyImage13 from './images/jacket3.png'
 import MyImage14 from './images/fit.png'
 import MyImage15 from './images/girl.png'
 
-
-
-
-
-
-
 export const sliderItems = [
     {
         id: 1,
