@@ -40,7 +40,6 @@ const Info = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
 `;
 const Icon = styled.div`
   width: 40px;
